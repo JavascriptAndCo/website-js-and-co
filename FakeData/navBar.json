@@ -1,10 +1,10 @@
 [
     {
-        "name": "Acceuil",
+        "name": "Accueil",
         "link": "/"
     },
     {
-        "name": "Qui sommes nous ?",
+        "name": "Qui sommes-nous ?",
         "link": "/qui-sommes-nous"
     },
     {
