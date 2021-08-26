@@ -22,12 +22,12 @@ module.exports = {
                 fade: "fadeIn ease 3s",
                 fadeFast: "fadeIn ease 0.5s",
                 fadeMid: "fadeIn ease 1.5s",
-                fadeRight: "fadeInRight ease-in 0.5s",
-                fadeLeft: "fadeInLeft ease-in 0.5s",
-                fadeTop: "fadeInTop ease-in 0.5s",
-                fadeBottom: "fadeInBottom ease-in 0.5s",
-                rotateDown: "rotateDown forwards 0.5s",
-                rotateUp: "rotateUp forwards 0.5s",
+                fadeRight: "fadeInRight ease-in 1s",
+                fadeLeft: "fadeInLeft ease-in 1s",
+                fadeTop: "fadeInTop ease-in 1s",
+                fadeBottom: "fadeInBottom ease-in 1s",
+                rotateDown: "rotateDown forwards 1s",
+                rotateUp: "rotateUp forwards 1s",
             },
             keyframes: {
                 fadeIn: {

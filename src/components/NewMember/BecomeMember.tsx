@@ -3,7 +3,7 @@ import React from "react";
 function BecomeMembers(): JSX.Element {
     return (
         <div
-            className="h-screen w-screen flex flex-col pt-12 lg:pt-10 items-center justify-center bg-white z-50"
+            className="h-screen w-screen flex flex-col pt-12 lg:pt-0 items-center justify-center bg-white z-50"
             style={{
                 scrollSnapAlign: "start",
             }}

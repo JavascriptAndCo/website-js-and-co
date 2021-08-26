@@ -7,7 +7,7 @@ function NavBar(): JSX.Element {
     const [isSideBar, setIsSidebar] = useState(false);
     return (
         <div
-            className="w-full bg-customYellow px-5 py-3 font-titilumWeb z-50 sticky top-0"
+            className="w-full bg-customYellow px-5 py-3 font-titilumWeb z-50 fixed top-0"
             style={{ textShadow: "5px 5px 10px rgba(0, 0, 0, 0.25)" }}
         >
             <div className="hidden lg:flex text-ms items-center justify-center lg:justify-start z-10 animate-fade">

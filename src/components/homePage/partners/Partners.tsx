@@ -14,10 +14,7 @@ function Partners(): JSX.Element {
     );
 
     return (
-        <div
-            className="h-screen text-center font-titilumWeb w-screen flex flex-col px-5 md:px-10 lg:px-52 items-center lg:bg-white bg-customYellow"
-            style={{ scrollSnapAlign: "start" }}
-        >
+        <div className="h-screen text-center font-titilumWeb w-screen flex flex-col px-5 md:px-10 lg:px-52 items-center lg:bg-white bg-customYellow">
             <div
                 ref={
                     scrollRefSec5 as unknown as MutableRefObject<HTMLDivElement>
