@@ -16,11 +16,11 @@ function DesEntrepreneurs(): JSX.Element {
     );
     return (
         <div
-            className="h-screen w-screen flex justify-center pt-10 px-5 lg:px-10 bg-white"
+            className="h-screen w-screen flex justify-center px-7 lg:px-10 bg-white"
             style={{ scrollSnapAlign: "start" }}
         >
             <div
-                className="w-full flex flex-col lg:flex-row items-center lg:justify-center"
+                className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-center"
                 ref={scrollRef4 as unknown as MutableRefObject<HTMLDivElement>}
             >
                 <div

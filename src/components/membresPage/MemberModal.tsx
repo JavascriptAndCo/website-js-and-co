@@ -38,7 +38,7 @@ function MemberModal({
                             ></Image>
                         </motion.button>
                     </div>
-                    <div className="lg:w-full px-5 lg:px-10 transform -translate-y-14 flex flex-col items-center lg:items-start">
+                    <div className="lg:w-full px-5 lg:px-12 transform -translate-y-14 flex flex-col items-center lg:items-start">
                         <div
                             className="h-40 w-40 rounded-full border-4 border-white "
                             style={{
@@ -64,7 +64,7 @@ function MemberModal({
                             {" "}
                             portfolio : {item.linkPortfolio}
                         </a>
-                        <p className="text-center text-xs lg:text-xl lg:text-left mt-5">
+                        <p className="text-center text-sm lg:text-xl lg:text-left mt-5">
                             {item.description}
                         </p>
                         <div className="flex w-full items-center justify-center lg:justify-start mt-10">

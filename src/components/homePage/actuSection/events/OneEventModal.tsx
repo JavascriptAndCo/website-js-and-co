@@ -29,10 +29,11 @@ function OneEventModal({ date, item, setIsOpen }: Iprops): JSX.Element {
                         <div className="flex justify-between">
                             <div className="flex-col">
                                 <motion.button
-                                    whileTap={{ scale: 0.9 }}
+                                    className="w-full flex justify-end lg:justify-start my-2"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     <Image
+                                        className="transform hover:scale-110"
                                         src={"/icons/CloseButton.png"}
                                         alt="closeButton"
                                         height={30}
@@ -40,7 +41,7 @@ function OneEventModal({ date, item, setIsOpen }: Iprops): JSX.Element {
                                         priority
                                     ></Image>
                                 </motion.button>
-                                <h2 className="w-full text-3xl font-bold mt-2 lg:pr-20">
+                                <h2 className="w-full text-3xl font-bold  lg:pr-20">
                                     {item?.name}
                                 </h2>
                                 <h3 className="text-xl mt-3">
@@ -55,7 +56,7 @@ function OneEventModal({ date, item, setIsOpen }: Iprops): JSX.Element {
                                 </p>
                             </div>
                             <div
-                                className="h-60 w-6/12 rounded-lg  flex-col items-end p-5  shadow-cardShadow border border-black hidden lg:flex"
+                                className="h-72 w-6/12 rounded-lg  flex-col items-end p-5  shadow-cardShadow border border-black hidden lg:flex"
                                 style={{
                                     backgroundImage: `url(${urlBuilder(
                                         `${item?.image?.url}`,

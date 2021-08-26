@@ -14,11 +14,11 @@ function UneExpertise(): JSX.Element {
 
     return (
         <div
-            className="h-screen w-screen flex justify-center pt-10 px-5 lg:px-10 bg-customYellow"
+            className="h-screen w-screen flex justify-center  px-5 lg:px-10 bg-customYellow"
             style={{ scrollSnapAlign: "start" }}
         >
             <div
-                className="w-full flex flex-col lg:flex-row-reverse items-center lg:justify-center"
+                className="w-full flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-center"
                 ref={scrollRef2 as unknown as MutableRefObject<HTMLDivElement>}
             >
                 <div

@@ -41,7 +41,7 @@ function OneEvent({
                     );
                 }}
                 onClick={() => setIsOpen(true)}
-                className=" text-left transition duration-500 flex justify-start fong-titilumWeb rounded-lg my-4  transform hover:-translate-y-1 hover:scale-105"
+                className="lg:w-full text-left transition duration-500 flex justify-start fong-titilumWeb rounded-lg my-4  transform hover:-translate-y-1 hover:scale-105"
             >
                 <div
                     className={`rounded-lg border border-black animate-fade shadow-cardShadow hidden lg:flex ${ImgAnimation}`}
