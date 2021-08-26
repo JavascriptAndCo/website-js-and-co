@@ -6,6 +6,7 @@ import { RootState } from "src/redux/reducer";
 
 function NewMembers(): JSX.Element {
     const { newMember } = useSelector((state: RootState) => state.footer);
+
     return (
         <div
             style={{

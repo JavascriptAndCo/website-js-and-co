@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import data from "FakeData/navBar.json";
 import SideBar from "./SideBar";
 import Burger from "./Burger";
+import { useRouter } from "next/router";
 
 function NavBar(): JSX.Element {
     const [isSideBar, setIsSidebar] = useState(false);
+    const router = useRouter();
     return (
         <div
             className="w-full bg-customYellow px-5 py-3 font-titilumWeb z-50 fixed top-0"
@@ -13,13 +15,17 @@ function NavBar(): JSX.Element {
             <div className="hidden lg:flex text-ms items-center justify-center lg:justify-start z-10 animate-fade">
                 {data.map((item, index) => {
                     return (
-                        <a
-                            href={item.link}
+                        <button
                             className="lg:mx-4 mx-2"
                             key={index}
+                            onClick={() =>
+                                router
+                                    .push(item.link)
+                                    .then(() => window.scrollTo(0, 0))
+                            }
                         >
                             {item.name}
-                        </a>
+                        </button>
                     );
                 })}
             </div>
