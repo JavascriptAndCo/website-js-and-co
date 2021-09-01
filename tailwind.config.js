@@ -22,12 +22,12 @@ module.exports = {
                 fade: "fadeIn ease 3s",
                 fadeFast: "fadeIn ease 0.5s",
                 fadeMid: "fadeIn ease 1.5s",
-                fadeRight: "fadeInRight ease-in 0.5s",
-                fadeLeft: "fadeInLeft ease-in 0.5s",
-                fadeTop: "fadeInTop ease-in 0.5s",
-                fadeBottom: "fadeInBottom ease-in 0.5s",
-                rotateDown: "rotateDown forwards 0.5s",
-                rotateUp: "rotateUp forwards 0.5s",
+                fadeRight: "fadeInRight ease-in 1.2s",
+                fadeLeft: "fadeInLeft ease-in 1.2s",
+                fadeTop: "fadeInTop ease-in 1.2s",
+                fadeBottom: "fadeInBottom ease-in 1.2s",
+                rotateDown: "rotateDown forwards 1.2s",
+                rotateUp: "rotateUp forwards 1.2s",
             },
             keyframes: {
                 fadeIn: {
@@ -92,7 +92,8 @@ module.exports = {
                 cardShadow: "5px 5px 20px rgba(0, 0, 0, 0.15)",
             },
             screens: {
-                lg: "1100px",
+                lg: "1200px",
+                lt: "1100px",
                 xl: "1300px",
             },
         },
