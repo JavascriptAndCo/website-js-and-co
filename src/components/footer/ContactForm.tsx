@@ -7,10 +7,10 @@ function ContactForm(): JSX.Element {
 
         emailjs
             .sendForm(
-                "YOUR_SERVICE_ID",
-                "YOUR_TEMPLATE_ID",
+                "service_90o10uc",
+                "template_b24ch4o",
                 e.target as string | HTMLFormElement,
-                "YOUR_USER_ID",
+                "user_OWiMezWOLeYTzRgg9Gd3a",
             )
             .then(
                 (result) => {
@@ -45,11 +45,16 @@ function ContactForm(): JSX.Element {
                 className="mt-1 text-ms bg-customYellow border border-black rouded-md p-2 rounded-md focus:outline-none"
                 type="text"
                 name="user_email"
+                id="user_email"
             />
             <label className="mt-2 font-bold" htmlFor="message">
                 Message
             </label>
-            <textarea className="mt-1 text-ms lg:mb-5 bg-customYellow border border-black rouded-md p-2 rounded-md focus:outline-none" />
+            <textarea
+                id="message"
+                name="message"
+                className="mt-1 text-ms lg:mb-5 bg-customYellow border border-black rouded-md p-2 rounded-md focus:outline-none"
+            />
             <button
                 type="submit"
                 value="send"
