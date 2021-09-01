@@ -74,15 +74,24 @@ function MemberModal({
                                         className="text-center text-sm lg:text-base lg:mr-5 underline"
                                         key={index}
                                     >
-                                        <a href={item?.link} target="_blank">
-                                            <Image
-                                                src={urlBuilder(item.icon.url)}
-                                                alt="icon"
-                                                width={50}
-                                                height={50}
-                                                priority
-                                            />
-                                        </a>
+                                        {item.icon === null ? (
+                                            ""
+                                        ) : (
+                                            <a
+                                                href={item?.link}
+                                                target="_blank"
+                                            >
+                                                <Image
+                                                    src={urlBuilder(
+                                                        item.icon.url,
+                                                    )}
+                                                    alt="icon"
+                                                    width={50}
+                                                    height={50}
+                                                    priority
+                                                />
+                                            </a>
+                                        )}
                                     </div>
                                 );
                             })}

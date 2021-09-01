@@ -14,8 +14,7 @@ function Section1(): JSX.Element {
     return (
         <div
             ref={scrollRefSec1 as unknown as MutableRefObject<HTMLDivElement>}
-            className="flex flex-col justify-center items-center h-screen w-screen bg-customYellow "
-            style={{ scrollSnapAlign: "start" }}
+            className="flex flex-col justify-center items-center h-screen w-screen bg-customYellow"
         >
             <div>
                 <MainTitle textShadow={textShadow} />

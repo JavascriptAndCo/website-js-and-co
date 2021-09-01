@@ -9,10 +9,7 @@ function Section2(): JSX.Element {
         scrollRefSec2 as unknown as MutableRefObject<HTMLDivElement>,
     );
     return (
-        <div
-            className="h-screen w-screen flex py-10 md:px-10 pt-10 lg:pt-20 lg:px-10 items-center"
-            style={{ scrollSnapAlign: "start" }}
-        >
+        <div className="h-screen w-screen flex py-10 md:px-10 pt-10 lg:py-20 lg:px-10 items-center">
             <div
                 ref={
                     scrollRefSec2 as unknown as MutableRefObject<HTMLDivElement>
