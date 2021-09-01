@@ -10,15 +10,19 @@ function SocialMedia({
 }): JSX.Element {
     return (
         <div>
-            <a href={item?.link} target="_blank">
-                <Image
-                    src={urlBuilder(item.icon.url)}
-                    alt="NosRéseaux"
-                    width={80}
-                    height={80}
-                    priority
-                />
-            </a>
+            {item.icon === null ? (
+                ""
+            ) : (
+                <a href={item?.link} target="_blank">
+                    <Image
+                        src={urlBuilder(item.icon.url)}
+                        alt="NosRéseaux"
+                        width={80}
+                        height={80}
+                        priority
+                    />
+                </a>
+            )}
         </div>
     );
 }

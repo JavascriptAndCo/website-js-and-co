@@ -13,10 +13,7 @@ function UnRéseaux(): JSX.Element {
     const { unReseau } = useSelector((state: RootState) => state.aboutUs);
 
     return (
-        <div
-            className="h-screen w-screen flex justify-center px-5 lg:px-10 bg-white"
-            style={{ scrollSnapAlign: "start" }}
-        >
+        <div className="h-screen w-screen flex justify-center  pt-10 px-5 lg:px-10 bg-white">
             <div
                 className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-center"
                 ref={scrollRef as unknown as MutableRefObject<HTMLDivElement>}
