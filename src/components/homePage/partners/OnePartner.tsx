@@ -10,17 +10,21 @@ function OnePartner({
 }): JSX.Element {
     return (
         <div className="lg:my-1 w-full my-2 rounded-xl py-2 lg:w-96 lg:h-80 flex flex-col items-center justify-center bg-white  border border-black shadow-buttonShadow transition duration-500 transform hover:scale-105">
-            <a
-                href={item?.link}
-                target="_blank"
-                className="w-40 h-20 lg:w-44 lg:h-32"
-                style={{
-                    backgroundImage: `url(${urlBuilder(item?.logo.url)})`,
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "contain",
-                }}
-            />
+            {item?.logo === null ? (
+                ""
+            ) : (
+                <a
+                    href={item?.link}
+                    target="_blank"
+                    className="w-40 h-20 lg:w-44 lg:h-32"
+                    style={{
+                        backgroundImage: `url(${urlBuilder(item?.logo.url)})`,
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "contain",
+                    }}
+                />
+            )}
             <h3 className="font-bold text-lg lg:text-2xl lg:mt-5">
                 {item?.name}
             </h3>
