@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "FakeData/navBar.json";
+import data from "Data/navBar.json";
 import SideBar from "./SideBar";
 import Burger from "./Burger";
 import { useRouter } from "next/router";

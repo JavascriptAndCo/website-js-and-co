@@ -1,5 +1,5 @@
 import React from "react";
-import NBData from "FakeData/navBar.json";
+import NBData from "Data/navBar.json";
 import ListItem from "./ListItem";
 import ContactForm from "./ContactForm";
 import NewMembers from "./NewMember";
