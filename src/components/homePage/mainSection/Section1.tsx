@@ -4,7 +4,6 @@ import Image from "next/image";
 
 function Section1(): JSX.Element {
     const scrollRefSec1 = useRef();
-    const textShadow = "5px 5px 10px rgba(0, 0, 0, 0.25)";
     const [animation, setAnimation] = useState("");
     useEffect(() => {
         setAnimation(
@@ -17,7 +16,7 @@ function Section1(): JSX.Element {
             className="flex flex-col justify-center items-center h-screen w-screen bg-customYellow"
         >
             <div>
-                <MainTitle textShadow={textShadow} />
+                <MainTitle />
             </div>
             <div className={`animate-fade mt-20 ${animation}`}>
                 <Image
