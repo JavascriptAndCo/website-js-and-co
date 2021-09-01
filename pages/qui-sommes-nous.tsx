@@ -6,7 +6,7 @@ import UnRéseaux from "@components/aboutPage/UnRéseaux";
 import Footer from "@components/footer/Footer";
 import { GetStaticPropsResult } from "next";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setAboutUs, setFooter } from "src/redux/action";
 import { GET_ABOUTUS } from "src/services/queries";
@@ -15,8 +15,11 @@ import { apolloClient } from "./_app";
 
 function quisommesnous(about: about_about): JSX.Element {
     const dispatch = useDispatch();
-    dispatch(setAboutUs(about.aboutUs));
-    dispatch(setFooter(about.footer));
+
+    useEffect(() => {
+        dispatch(setAboutUs(about.aboutUs));
+        dispatch(setFooter(about.footer));
+    }, []);
 
     return (
         <div>

@@ -16,15 +16,19 @@ import Partners from "@components/homePage/partners/Partners";
 import { allContent_content } from "__generated__/allContent";
 import Footer from "@components/footer/Footer";
 import Actu from "@components/homePage/actuSection/Actu";
+import { useEffect } from "react";
 
 export function Home(content: allContent_content): JSX.Element {
     const dispatch = useDispatch();
 
-    dispatch(setActu(content.actu));
-    dispatch(setAction(content.action));
-    dispatch(setSocialMedia(content.socialMedia));
-    dispatch(setPartners(content.partners));
-    dispatch(setFooter(content.footer));
+    useEffect(() => {
+        dispatch(setActu(content.actu));
+        dispatch(setAction(content.action));
+        dispatch(setSocialMedia(content.socialMedia));
+        dispatch(setPartners(content.partners));
+        dispatch(setFooter(content.footer));
+    }, []);
+
     return (
         <div>
             <Section1 />

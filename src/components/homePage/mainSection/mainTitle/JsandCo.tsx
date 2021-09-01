@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 
-interface IProps {
-    textShadow: string;
-}
-
-function JSandCo({ textShadow }: IProps): JSX.Element {
+function JSandCo(): JSX.Element {
     const [animation, setAnimation] = useState("");
     const [animation2, setAnimation2] = useState("");
     const [animation3, setAnimation3] = useState("");
@@ -27,36 +23,11 @@ function JSandCo({ textShadow }: IProps): JSX.Element {
         <div
             className={`font-bold font-titilumWeb text-7xl lg:text-9xl flex justify-center`}
         >
-            <span
-                className={`mx-1  ${animation}`}
-                style={{ textShadow: textShadow }}
-            >
-                J
-            </span>
-            <span
-                className={`mx-1  ${animation2}`}
-                style={{ textShadow: textShadow }}
-            >
-                S
-            </span>
-            <span
-                className="lg:mx-20 mx-12 animate-fade  text-white "
-                style={{ textShadow: textShadow }}
-            >
-                &
-            </span>
-            <span
-                className={`mx-1 ${animation3}`}
-                style={{ textShadow: textShadow }}
-            >
-                C
-            </span>
-            <span
-                className={`mx-1 ${animation4}`}
-                style={{ textShadow: textShadow }}
-            >
-                o
-            </span>
+            <span className={`  ${animation}`}>J</span>
+            <span className={` ${animation2}`}>S</span>
+            <span className="lg:mx-16 mx-12 animate-fade  text-white ">&</span>
+            <span className={` ${animation3}`}>C</span>
+            <span className={` ${animation4}`}>o</span>
         </div>
     );
 }

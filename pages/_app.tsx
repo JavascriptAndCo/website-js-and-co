@@ -12,10 +12,7 @@ export const apolloClient = initializeApollo();
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     return (
         <Provider store={store}>
-            <div
-                className="h-screen w-screen overflow-y-scroll"
-                style={{ scrollSnapType: "y mandatory" }}
-            >
+            <div className="h-screen w-screen">
                 <NavBar />
                 <Component {...pageProps} />
             </div>

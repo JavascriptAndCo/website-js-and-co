@@ -15,10 +15,7 @@ function Section4(): JSX.Element {
     );
 
     return (
-        <div
-            className="h-screen w-screen flex md:px-10  lg:px-10 items-center bg-white"
-            style={{ scrollSnapAlign: "start" }}
-        >
+        <div className=" w-screen flex md:px-10  h-screen items-center bg-white">
             {
                 <div
                     ref={

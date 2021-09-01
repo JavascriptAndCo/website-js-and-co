@@ -16,10 +16,7 @@ function AboutUs(): JSX.Element {
     );
 
     return (
-        <div
-            className="h-screen w-screen flex flex-col justify-between pt-20 lg:pt-40 lg:justify-between items-center font-titilumWeb bg-customYellow px-5 "
-            style={{ scrollSnapAlign: "start" }}
-        >
+        <div className="h-screen w-screen flex flex-col justify-between pt-20 lg:pt-40 lg:justify-between items-center font-titilumWeb bg-customYellow px-5 ">
             <div className="text-center  lg:px-20">
                 <h2 className="font-bold text-4xl lg:text-6xl tracking-wider animate-fadeTop">
                     {title_1}
