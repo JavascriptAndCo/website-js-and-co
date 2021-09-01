@@ -42,7 +42,7 @@ function Card({
                     "transform transition-transform duration-1000  translate-y-0 -translate-x-0",
                 );
             }}
-            className={`flex flex-col items-center lg:items-start ${textAnimation} ${
+            className={`flex flex-col items-center xl:items-start ${textAnimation} ${
                 isVisibleSec3 && `animate-fadeBottom`
             }`}
         >

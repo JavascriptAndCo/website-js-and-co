@@ -14,14 +14,14 @@ function CardContent({
                 <span className="text-center font-bold">{item?.title}</span>
             </div>
             <div
-                className={`bg-white font-titilumWeb shadow-buttonShadow lg:flex flex-col z-10 lg:p-5 border border-black rounded-lg transform -translate-y-14 ${
+                className={`bg-white font-titilumWeb shadow-buttonShadow xxl:flex flex-col z-10 lg:p-5 border border-black rounded-lg transform -translate-y-14 ${
                     isModal ? `flex` : `hidden`
                 }`}
             >
-                <span className="hidden lg:flex font-bold lg:text-2xl mt-5">
+                <span className="hidden xl:flex font-bold lg:text-2xl mt-5">
                     {item?.title}
                 </span>
-                <span className="hidden lg:flex text-xs lg:text-xs lg:leading-7 border-b border-black pt-2 pb-5">
+                <span className="hidden xl:flex text-xs lg:text-xs lg:leading-7 border-b border-black pt-2 pb-5">
                     {item?.text}
                 </span>
             </div>

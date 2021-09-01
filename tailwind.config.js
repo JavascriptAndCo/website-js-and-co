@@ -90,8 +90,10 @@ module.exports = {
             boxShadow: {
                 buttonShadow: "5px 5px 10px rgba(0, 0, 0, 0.4)",
                 cardShadow: "5px 5px 20px rgba(0, 0, 0, 0.15)",
+                navBarShadow: "5px 5px 10px rgba(0, 0, 0, 0.25)",
             },
             screens: {
+                xxl: "1400px",
                 lg: "1200px",
                 lt: "1100px",
                 xl: "1300px",
