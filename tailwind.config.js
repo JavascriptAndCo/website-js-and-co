@@ -92,7 +92,8 @@ module.exports = {
                 cardShadow: "5px 5px 20px rgba(0, 0, 0, 0.15)",
             },
             screens: {
-                lg: "1100px",
+                lg: "1200px",
+                lt: "1100px",
                 xl: "1300px",
             },
         },

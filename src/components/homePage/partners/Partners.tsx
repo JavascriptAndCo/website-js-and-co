@@ -19,7 +19,7 @@ function Partners(): JSX.Element {
                 ref={
                     scrollRefSec5 as unknown as MutableRefObject<HTMLDivElement>
                 }
-                className={`w-screen lg:h-96  lg:pt-32 pt-14 px-10 pb-2 lg:px-60 lg:pb-5 bg-customYellow ${
+                className={`w-screen lg:h-96  lg:pt-32 lt:pt-16  pt-14 px-10 pb-2 lg:px-60 lg:pb-5 bg-customYellow ${
                     isVisibleSec5 ? `animate-fadeTop` : ""
                 }`}
             >

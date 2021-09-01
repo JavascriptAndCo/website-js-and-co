@@ -14,7 +14,7 @@ function DesFormation(): JSX.Element {
     return (
         <div className="h-screen w-screen flex justify-center pt-10 px-5 lg:px-10 bg-customYellow">
             <div
-                className="w-full flex flex-col lg:flex-row-reverse items-center lg:justify-center"
+                className="w-full flex flex-col lg:flex-row-reverse items-center justify-center lg:justify-center"
                 ref={scrollRef3 as unknown as MutableRefObject<HTMLDivElement>}
             >
                 <div
