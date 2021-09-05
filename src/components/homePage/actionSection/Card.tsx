@@ -17,7 +17,7 @@ interface IProps {
 function Card({
     item,
     setIsModal,
-    isModal,
+
     index,
     setCardSelected,
     isVisibleSec3,
@@ -61,7 +61,7 @@ function Card({
                     layout="fill"
                 />
             </motion.button>
-            <CardContent isModal={isModal} item={item} />
+            <CardContent item={item} />
         </div>
     );
 }
