@@ -29,8 +29,26 @@ export function Home(content: allContent_content): JSX.Element {
         dispatch(setFooter(content.footer));
     }, []);
 
+    const description =
+        "JS (Java Script) est un langage qui grâce à ses nombreux frameworks et librairies permet en 2016 de répondre à presque toutes les problématiques du Web et du développement en général.";
+    const pageTitle = "JS&CoAcceuil";
     return (
         <div>
+            <head>
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
+                <meta charSet="utf-8" />
+                <meta name="description" content={description}></meta>
+                + <meta property="og:title" content={pageTitle} key="ogtitle" />
+                +{" "}
+                <meta
+                    property="og:description"
+                    content={description}
+                    key="ogdesc"
+                />
+            </head>
             <Section1 />
             <Actu />
             <Actions />
