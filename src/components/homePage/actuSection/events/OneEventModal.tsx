@@ -24,7 +24,7 @@ function OneEventModal({ date, item, setIsOpen }: Iprops): JSX.Element {
                         initial={{ height: 0, opacity: 0 }}
                         transition={{ duration: 1 }}
                         exit={{ height: 0 }}
-                        className="w-10/12 h-10/12 cursor-pointer lg:9/12 px-5 lg:p-8 lg:mx-12 shadow-buttonShadow flex flex-col  border border-black justify-start z-50 text-black dark:text-white bg-customYellow dark:bg-component rounded-lg overflow-y-auto"
+                        className="w-10/12 h-10/12 cursor-pointer lg:h-96 px-5 lg:p-8 lg:mx-12 shadow-buttonShadow flex flex-col  border border-black justify-start z-50 text-black dark:text-white bg-customYellow dark:bg-component rounded-lg overflow-y-auto"
                     >
                         <div className="flex justify-between">
                             <div className="flex-col">
