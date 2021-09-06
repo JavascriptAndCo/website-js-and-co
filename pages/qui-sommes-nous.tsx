@@ -12,6 +12,8 @@ import { setAboutUs, setFooter } from "src/redux/action";
 import { GET_ABOUTUS } from "src/services/queries";
 import { about_about } from "__generated__/about";
 import { apolloClient } from "./_app";
+import Head from "next/head";
+import metaData from "../Data/metaData.json";
 
 function quisommesnous(about: about_about): JSX.Element {
     const dispatch = useDispatch();
@@ -23,6 +25,19 @@ function quisommesnous(about: about_about): JSX.Element {
 
     return (
         <div>
+            <Head>
+                <title>{metaData.AboutPage.AboutPageTitle}</title>
+                <meta charSet="utf-8" />
+                <meta
+                    name="description"
+                    content={metaData.AboutPage.AboutPageDescription}
+                />
+                <meta
+                    property="og:title"
+                    content={metaData.AboutPage.AboutPageTitle}
+                    key="ogtitle"
+                />
+            </Head>
             <AboutUs />
             <UnRéseaux />
             <UneExpertise />

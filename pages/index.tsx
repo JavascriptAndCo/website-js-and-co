@@ -17,6 +17,8 @@ import { allContent_content } from "__generated__/allContent";
 import Footer from "@components/footer/Footer";
 import Actu from "@components/homePage/actuSection/Actu";
 import { useEffect } from "react";
+import Head from "next/head";
+import metaData from "../Data/metaData.json";
 
 export function Home(content: allContent_content): JSX.Element {
     const dispatch = useDispatch();
@@ -29,26 +31,21 @@ export function Home(content: allContent_content): JSX.Element {
         dispatch(setFooter(content.footer));
     }, []);
 
-    const description =
-        "JS (Java Script) est un langage qui grâce à ses nombreux frameworks et librairies permet en 2016 de répondre à presque toutes les problématiques du Web et du développement en général.";
-    const pageTitle = "JS&CoAcceuil";
     return (
         <div>
-            <head>
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
+            <Head>
+                <title>{metaData.HomePage.HomePageTitle}</title>
                 <meta charSet="utf-8" />
-                <meta name="description" content={description}></meta>
-                + <meta property="og:title" content={pageTitle} key="ogtitle" />
-                +{" "}
                 <meta
-                    property="og:description"
-                    content={description}
-                    key="ogdesc"
+                    name="description"
+                    content={metaData.HomePage.HomePageDescription}
                 />
-            </head>
+                <meta
+                    property="og:title"
+                    content={metaData.HomePage.HomePageTitle}
+                    key="ogtitle"
+                />
+            </Head>
             <Section1 />
             <Actu />
             <Actions />
