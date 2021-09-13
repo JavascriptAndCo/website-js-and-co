@@ -14,7 +14,7 @@ function Partners(): JSX.Element {
     );
 
     return (
-        <div className="h-screen text-center font-titilumWeb w-screen flex flex-col px-5 md:px-10 lg:px-52 items-center lg:bg-white bg-customYellow">
+        <div className="h-full pb-5 text-center font-titilumWeb w-screen flex flex-col px-5 md:px-10 lg:px-52 items-center lg:bg-white bg-customYellow">
             <div
                 ref={
                     scrollRefSec5 as unknown as MutableRefObject<HTMLDivElement>
@@ -35,7 +35,10 @@ function Partners(): JSX.Element {
             >
                 {partners?.map((item, index) => {
                     return (
-                        <div className="lg:mx-10 lg:mt-5 mt-2" key={index}>
+                        <div
+                            className=" mx-5 xxl:mx-10 lg:mt-5 mt-2"
+                            key={index}
+                        >
                             <OnePartner item={item} />
                         </div>
                     );
