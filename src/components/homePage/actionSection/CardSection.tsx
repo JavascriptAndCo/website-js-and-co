@@ -22,7 +22,7 @@ function CardSection({
             {item?.map((item, index) => {
                 return (
                     <div
-                        className="mt-40 lg:mt-0 lg:mx-2 xl:mx-10 xl:w-96 h-24 "
+                        className="mt-40 mx-2 xxl:mx-10 xxl:mt-0 xxl:w-96  h-24 "
                         key={index}
                     >
                         <Card

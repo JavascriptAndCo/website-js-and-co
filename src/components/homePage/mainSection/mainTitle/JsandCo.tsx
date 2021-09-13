@@ -19,15 +19,16 @@ function JSandCo(): JSX.Element {
             "transform lg:-translate-x-16 -translate-x-10 transition-transform duration-2000",
         );
     }, []);
+
     return (
         <div
             className={`font-bold font-titilumWeb text-7xl lg:text-9xl flex justify-center`}
         >
-            <span className={`  ${animation}`}>J</span>
-            <span className={` ${animation2}`}>S</span>
+            <span className={`${animation}`}>J</span>
+            <span className={`${animation2}`}>S</span>
             <span className="lg:mx-16 mx-12 animate-fade  text-white ">&</span>
-            <span className={` ${animation3}`}>C</span>
-            <span className={` ${animation4}`}>o</span>
+            <span className={`${animation3}`}>C</span>
+            <span className={`${animation4}`}>o</span>
         </div>
     );
 }

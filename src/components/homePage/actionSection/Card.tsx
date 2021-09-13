@@ -17,7 +17,7 @@ interface IProps {
 function Card({
     item,
     setIsModal,
-    isModal,
+
     index,
     setCardSelected,
     isVisibleSec3,
@@ -42,7 +42,7 @@ function Card({
                     "transform transition-transform duration-1000  translate-y-0 -translate-x-0",
                 );
             }}
-            className={`flex flex-col items-center lg:items-start ${textAnimation} ${
+            className={`flex flex-col items-center xxl:items-start ${textAnimation} ${
                 isVisibleSec3 && `animate-fadeBottom`
             }`}
         >
@@ -61,7 +61,7 @@ function Card({
                     layout="fill"
                 />
             </motion.button>
-            <CardContent isModal={isModal} item={item} />
+            <CardContent item={item} />
         </div>
     );
 }

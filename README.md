@@ -1,7 +1,5 @@
 # JSandCO
 
-This project was generated with [superplate](https://github.com/pankod/superplate).
-
 ## Getting Started
 
 ```bash
@@ -30,8 +28,9 @@ This project was generated with [superplate](https://github.com/pankod/superplat
 
 ## env variables.
 
-NEXT_PUBLIC_API_URL="https://strapi-js-co-lr9mg.ondigitalocean.app/graphql"
-NEXT_PUBLIC_API_TOKEN="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjI5ODAzODkxLCJleHAiOjE2MzIzOTU4OTF9.SUdRQCJLN0_JQHdcy7Lah3cqcRf4Rsf6RzqwWzh7Mgc"
+NEXT_PUBLIC_API_URL
+NEXT_PUBLIC_API_TOKEN
+Ask to the website Admin or Log in Strapi with a admin account
 
 ## Learn More
 

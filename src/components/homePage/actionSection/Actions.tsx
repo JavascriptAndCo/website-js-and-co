@@ -20,7 +20,7 @@ function Section3(): JSX.Element {
     const item = action_cards;
     const selectedCard = item && item[cardSelected];
     return (
-        <div className="flex flex-col items-center w-screen pt-5 relative bg-customYellow lg:bg-white mb-52">
+        <div className="flex flex-col items-center w-screen pt-5 relative bg-customYellow xxl:bg-white mb-52">
             <div
                 ref={
                     scrollRefSec3 as unknown as MutableRefObject<HTMLDivElement>

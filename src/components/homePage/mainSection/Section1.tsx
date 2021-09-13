@@ -4,7 +4,6 @@ import Image from "next/image";
 
 function Section1(): JSX.Element {
     const scrollRefSec1 = useRef();
-
     const [animation, setAnimation] = useState("");
     useEffect(() => {
         setAnimation(

@@ -12,7 +12,7 @@ interface IProps {
 
 function CardModal({ setIsModal, isModal, selectedCard }: IProps): JSX.Element {
     return (
-        <div className="flex lg:hidden bg-customYellow z-50 pt-20 px-10 absolute h-screen w-screen justify-center">
+        <div className="flex xxl:hidden bg-customYellow z-50  px-10 absolute h-screen w-screen items-center justify-center">
             <motion.button
                 animate={{ opacity: 1 }}
                 initial={{ opacity: 0 }}
@@ -31,7 +31,7 @@ function CardModal({ setIsModal, isModal, selectedCard }: IProps): JSX.Element {
                 <span className="font-bold text-5xl mt-5">
                     {selectedCard?.title}
                 </span>
-                <span className="text-lg leading-7 border-b mt-5  text-center border-black pt-2 pb-5">
+                <span className="text-2xl leading-10 border-b mt-5  text-center border-black pt-2 pb-5">
                     {selectedCard?.text}
                 </span>
             </motion.button>

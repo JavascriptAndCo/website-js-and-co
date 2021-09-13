@@ -1,5 +1,5 @@
 import React from "react";
-import data from "FakeData/NouveauMembres.json";
+import data from "Data/NouveauMembres.json";
 import BlackButton from "@components/buttons/BlackButton";
 import { useSelector } from "react-redux";
 import { RootState } from "src/redux/reducer";
