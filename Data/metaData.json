@@ -1,0 +1,19 @@
+{
+    "HomePage": {
+        "HomePageTitle": "JS&CO",
+        "HomePageDescription": "JS (Java Script) est un langage qui grâce à ses nombreux frameworks et librairies permet en 2020 de répondre à presque toutes les problématiques du Web et du développement en général."
+    },
+
+    "AboutPage": {
+        "AboutPageTitle": "Qui sommes nous ?",
+        "AboutPageDescription": "Fondée par des devs et des entrepreneurs en 2016, notre association a pour but de vulgariser les nouvelles technos du web, diffuser les bons usages dans le développement, et aider ses adhérents à s'améliorer et se rencontrer."
+    },
+    "MembersPage": {
+        "MembersPageTitle": "Décrouvrez les membres de JS&Co",
+        "MembersPageDescription": ""
+    },
+    "BecomeMemberPage": {
+        "BecomeMemberPageTitle": "Devenir Membre",
+        "BecomeMemberPageDescription": ""
+    }
+}
