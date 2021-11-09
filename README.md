@@ -31,7 +31,7 @@ This project was generated with [superplate](https://github.com/pankod/superplat
 ## env variables.
 
 NEXT_PUBLIC_API_URL="https://strapi-js-co-lr9mg.ondigitalocean.app/graphql"
-NEXT_PUBLIC_API_TOKEN= <YourToken> 
+NEXT_PUBLIC_API_TOKEN= YourToken
 
 ## Learn More
 
